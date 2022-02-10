@@ -253,7 +253,7 @@ gam_mod <- gam(temp_50 ~ s(wind.sp_50, bs = "cr", k=20), data = station_ave)
 summary(gam_mod)
 ```
 
-linear model has an r-square 0.01, which is bad. Not fitting the data very well.
+Linear model has an r-square 0.01, which is bad. Not fitting the data very well.
 However, for the gam model, we have a good r-square. However, we may faced an overfitting model (base on k = 20).
 
 # Delivarables
@@ -261,5 +261,6 @@ However, for the gam model, we have a good r-square. However, we may faced an ov
 -   Answer questions 1-5
 
 -   Paste the link to the github repo you created here
+https://github.com/ZhouEEEEEE/JSC370-labs.git
 
 -   Submit pdf or html output to Quercus
