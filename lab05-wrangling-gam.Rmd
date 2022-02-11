@@ -2,7 +2,8 @@
 title: "Lab 05 - Data Wrangling"
 output:
   html_document:
-    html_preview: false
+    html_preview: no
+  pdf_document: default
 link-citations: yes
 ---
 
@@ -83,7 +84,7 @@ system("git push -u origin master")
 
 Once you are done setting up the project, you can now start working with the MET data.
 
-## Setup in R
+## Setup in R 
 
 1.  Load the `data.table` (and the `dtplyr` and `dplyr` packages if you plan to work with those).
 
@@ -241,7 +242,7 @@ station_ave[, wind.sp_50 := quantile(wind.sp, probs=.5, na.rm = TRUE), by = STAT
 ggplot(station_ave, aes(x=wind.sp_50, y=temp_50)) +
   geom_point() +
   geom_smooth(method = "lm") +
-  geom_smooth(method = "gam", col=2)
+  geom_smooth(method = "gam", col=2) #test
 
 library(mgcv)
 
